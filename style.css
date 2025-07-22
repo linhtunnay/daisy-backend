@@ -1,15 +1,66 @@
 body {
-  font-family: Arial;
-  padding: 20px;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to right, #f8f8f8, #e6e6e6);
 }
-#messages {
-  margin-top: 20px;
-  list-style: none;
-  padding: 0;
+
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 16px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
-#messages li {
-  background: #eee;
-  margin: 5px 0;
+
+h1 {
+  text-align: center;
+  color: #555;
+}
+
+.chat-window {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
   padding: 10px;
-  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.message {
+  background-color: #d0ebff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.input-box {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.input-box button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
 }
