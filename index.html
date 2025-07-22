@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Daisy Chat</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daisy Messenger</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Daisy Chat</h1>
-  <div id="yourId">Your ID: ...</div>
-  <input id="toId" placeholder="Send to ID">
-  <input id="msgInput" placeholder="Enter message">
-  <button onclick="sendMessage()">Send</button>
-  <ul id="messages"></ul>
-  <script src="/socket.io/socket.io.js"></script>
+  <div class="app-container">
+    <h1>🌼 Daisy Messenger</h1>
+    <div class="chat-window">
+      <div class="message-list" id="messages">
+        <!-- Messages will appear here -->
+      </div>
+      <div class="input-box">
+        <input type="text" id="messageInput" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
