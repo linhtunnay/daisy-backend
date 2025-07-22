@@ -1,0 +1,15 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+#messages {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+#messages li {
+  background: #eee;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}

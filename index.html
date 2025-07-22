@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daisy Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Daisy Chat</h1>
+  <div id="yourId">Your ID: ...</div>
+  <input id="toId" placeholder="Send to ID">
+  <input id="msgInput" placeholder="Enter message">
+  <button onclick="sendMessage()">Send</button>
+  <ul id="messages"></ul>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
